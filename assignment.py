@@ -1,6 +1,7 @@
-def calculatePi(digits):
-  result = 0
-  return result
+iterations = int(input("Enter a number: "))
+pi = 0
 
-number_of_digits = input()
-print(calculatePi(number_of_digits))
+for i in range(iterations):
+    pi += (-1)**i / (2 * i + 1)
+
+print("Approximated value of PI: ", 4 * pi)
