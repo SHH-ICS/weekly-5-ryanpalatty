@@ -10,10 +10,35 @@
   </head>
 
   <body>
-  
-    <form name="myForm" action="handler.php" method="POST">
-          
-    </form>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Euclidean Plane Geometry</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Euclidean Plane Geometry</span>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form method="POST" action="handler.php" style="display: inline-block; text-align: left;">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="iterations" name="iterations" required>
+    <label class="mdl-textfield__label" for="iterations"></label>
+  </div>
+  <br>
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit">
+    Calculate
+  </button>
+</form>
+
 
   </body>
 </html>
